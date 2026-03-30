@@ -251,7 +251,7 @@ open class Ocp1Connection: CustomStringConvertible {
 
   /// Keepalive/ping interval (only necessary for UDP, but useful for other transports)
   open var heartbeatTime: Duration {
-    .seconds(1)
+    .seconds(0)
   }
 
   let _connectionState = AsyncCurrentValueSubject<Ocp1ConnectionState>(.notConnected)
